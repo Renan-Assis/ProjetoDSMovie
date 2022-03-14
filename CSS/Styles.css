@@ -10,16 +10,17 @@
 }
 *{
     box-sizing: border-box;
-    font-family:'Open Sans', sans-serif;
-    
+    font-family:'Open Sans', sans-serif; 
 }
+
 h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
+
 html, body{
     background-color:var(--cinza)
-
 }
+
 header {
     background-color:var(--roxo);
     color:var(--branco);
@@ -33,10 +34,12 @@ nav{
     align-items:center;
     justify-content: space-between;
 }
+
 nav a{
     font-size: 12px;
     font-weight:400;
 }
+
 nav h1{
     font-size: 24px;
     font-weight: 700;
@@ -58,8 +61,7 @@ a, a:hover{
 }
 
 #dsmovie-card-list{
-    padding: 40px 0;
-
+    padding: 0px 10px;
 }
 
 .dsmovie-card{
@@ -80,7 +82,6 @@ a, a:hover{
     height: 220px;
     justify-content:space-between;
     border-radius: 0 0 8px 8px;
-
 }
 
 .dsmovie-card-description h3 {
@@ -89,30 +90,33 @@ a, a:hover{
     margin-bottom: 25px;
     text-align: center;
 }
+
 .dsmovie-card-description-bottom{
     display:flex;
     flex-direction: column;
     align-items:center;
 }
+
 .dsmovie-card-description-bottom h4{
     font-size:16px;
     font-weight:700;
     color:var(--corestrela);
 }
+
 .dsmovie-card-description-bottom p{
     font-size:12px;
     font-weight: 400;
     color: var(--cinzaptxt);
     margin-bottom:10px;
-
 }
+
 .dsmovie-card-description-bottom img{
     width: 22px;
-    
 }
+
 .dsmovie-btn, .dsmovie-btn:hover{
     height: 40px;
-    width: 180px;
+    width: 250px;
     background-color:var(--roxo);
     color: var(--branco);
     font-size: 14px;
@@ -122,22 +126,25 @@ a, a:hover{
     justify-content: center;
     border-radius: 4px;
     border:0;
+    margin-top: 10px;
 }
+
 .dsmovie-form-container{
     padding: 40px 0;
     max-width: 480px;
 }
 
-/*.estrelas input[type=radio] {
+.estrelas input[type=radio] {
     display: none;
   }
   .estrelas label i.fa:before {
     content:'\f005';
     color: #FC0;
+    margin: 3px;
   }
   .estrelas input[type=radio]:checked ~ label i.fa:before {
     color: #CCC;
-  }*/
+  }
 
 .dsmovie-form-description {
     background-color: var(--branco);
@@ -147,6 +154,7 @@ a, a:hover{
     align-items: center;
     border-radius: 0 0 8px 8px;
 }
+
 .dsmovie-form{
     width: 100%;
 }
@@ -154,12 +162,26 @@ a, a:hover{
 .dsmovie-form-group{
     margin-bottom:20px;
 }
+.dsmovie-form-group-avaliation{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.dsmovie-form-group-avaliation label{
+    font-size: 12px;
+    color:var(--cinzaforms);
+}
 
 .dsmovie-form-description h3{
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 20px;
-    
+}
+
+.estrelas{
+    justify-content: center;
 }
 
 .dsmovie-form-group label{
@@ -173,6 +195,52 @@ a, a:hover{
     flex-direction:column;
     align-items:center;
     justify-content:space-between;
+}
 
+.dsmovie-pagination-container{
+    padding: 15px 0;
+    display:flex;
+    justify-content:center;
+}
 
+.dsmovie-pagination-box{
+    width:180px;
+    justify-content: space-between;
+    display:flex;
+    align-items:center;
+}
+
+.dsmovie-pagination-box p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color:var(--roxo);
+}
+
+.dsmovie-pagination-box button{
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--roxo);
+    border-radius: 4px;
+    background-color: var(--branco);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dsmovie-pagination-box button:disabled{
+    border: 1px solid var(--cinzaforms);
+}
+
+.dsmovie-pagination-box button:disabled img{
+    filter:unset;
+}
+
+.dsmovie-pagination-box button img{
+    filter: brightness(0) saturate(100%) invert(22%) sepia(29%) saturate(5247%) hue-rotate(235deg) brightness(101%) contrast(89%)
+}
+
+.dsmovie-flipped{
+    transform:rotate(180deg);
 }
